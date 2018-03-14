@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <!-- Load dependent stylesheets. -->
+    <!-- Google does not recommend running locally -->
+    <!-- https://groups.google.com/forum/#!topic/ima-sdk/48W9vKCHUXA -->
+    <!-- <link rel="stylesheet" href="video-js.min.css" /> -->
+    <!-- <link rel="stylesheet" href="videojs.ads.css" /> -->
+    <!-- https://googleads.github.io/videojs-ima/node_modules/videojs-contrib-ads/dist/videojs.ads.css -->
+
+    <!-- Load dependent stylesheets. -->
+    <link rel="stylesheet" href="//googleads.github.io/videojs-ima/node_modules/video.js/dist/video-js.min.css" />
+    <link rel="stylesheet" href="//googleads.github.io/videojs-ima/node_modules/videojs-contrib-ads/dist/videojs.ads.css" />
+    <link rel="stylesheet" href="//googleads.github.io/videojs-ima/dist/videojs.ima.css" />
+    <link rel="stylesheet" href="videojs.ima.css" />
+  </head>
+
+  <body>
+    <h4>VJS player - Don't forget to run with Python Server python -m SimpleHTTPServer</h4>
+    <video id="content_video" class="video-js vjs-default-skin"
+        controls preload="auto" width="640" height="360">
+      <source src="http://ktvk.videodownload.worldnow.com/KTVK_1203201804312800000AA.mp4" type="video/mp4" />
+      <!-- <source src="http://rmcdn.2mdn.net/Demo/vast_inspector/android.mp4"
+          type="video/mp4" /> -->
+    </video>
+    <!-- Load dependent scripts -->
+    <!-- <script src="client.js"></script> -->
+    <!-- http://s0.2mdn.net/instream/video/client.js -->
+    <!-- <script src="video.min.js"></script>
+    <script src="ima3.js"></script>
+    <script src="videojs.ads.min.js"></script>
+    <script src="videojs.ima.js"></script> -->
+    
+    <!-- Load dependent scripts -->
+    <script src="//googleads.github.io/videojs-ima/node_modules/video.js/dist/video.min.js"></script>
+    <script src="//imasdk.googleapis.com/js/sdkloader/ima3_debug.js"></script>
+    <script src="//googleads.github.io/videojs-ima/node_modules/videojs-contrib-ads/dist/videojs.ads.min.js"></script>
+    <script src="//googleads.github.io/videojs-ima/dist/videojs.ima.js"></script>
+    <script src="ads.js"></script>
+  </body>
+</html>
